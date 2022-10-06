@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>🕺 JUEGO AHORCADO</title>
+  </head>
+  <body
+    style="
+      background: url('../../imagenes/fondoJuego2.jpg') no-repeat;
+      background-position: center;
+      background-size: 200vw 200vh;
+    "
+  >
+    <div class="contenedor">
+      <div class="contenedor-contenidos">
+        <div class="logo">
+          <img
+            src="../../imagenes/logo A.png"
+            onclick="location.href='../../index.html'"
+            alt="logo-alura"
+          />
+        </div>
+        <div class="botonesYTextoMedio">
+          <input
+            id="palabraIngresada"
+            maxlength="8"
+            placeholder="Ingrese una palabra"
+          />
+          <div class="botonesYp">
+            <p>
+              <img
+                src="../../imagenes/Vector.png"
+                style="
+                  color: black;
+                  font-size: 20px;
+                  margin-right: 8px;
+                  margin-bottom: -4px;
+                "
+              />Máximo de 8 letras
+            </p>
+            <div class="btns1">
+              <button class="boton1">Guardar y empezar</button>
+              <button class="boton2" onclick="location.href='../../index.html'">
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="agregarPalabra.js" type="module"></script>
+    <script src="validatorLetter.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

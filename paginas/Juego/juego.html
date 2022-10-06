@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=.5, user-scalable=no" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>🕺 JUEGO AHORCADO</title>
+  </head>
+  <body
+    style="
+      background: url('../../imagenes/fondoJuego2.jpg') no-repeat;
+      background-position: center;background-size: 200vw 200vh;
+    "
+  >
+    <div class="contenedor">
+      <div class="contenedor-contenidos">
+        <div
+          class="logo"
+          style="
+            filter: invert(100%) drop-shadow(0px 0px 5px white)
+              drop-shadow(0px 0px 20px white);
+          "
+        >
+          <a href="../../index.html"
+            ><img src="../../imagenes/logo A.png" alt="logo-alura"
+          /></a>
+        </div>
+        <div class="divInputInvisible">
+          <input type="text" class="inputInvisible" />
+        </div>
+        <div class="canvasYBotones">
+          <div class="canvasDiv">
+            <canvas width="300" height="500" id="canvas"></canvas>
+          </div>
+          <div class="letraCorrecta"></div>
+          <div class="letrasIngresadas">
+            <input
+              type="text"
+              id="letrasIngresadas"
+              maxlength="9"
+              readonly
+              autofocus
+            />
+          </div>
+          <div class="btns2">
+            <button class="boton1" onclick="location.href='juego.html'">
+              Nuevo Juego
+            </button>
+
+            <button class="boton2" onclick="location.href='../../index.html'">
+              Salir Corriendo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
